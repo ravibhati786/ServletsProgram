@@ -27,6 +27,8 @@ public class UserVisitCookie extends HttpServlet {
         Cookie ck[] = request.getCookies();
         
         String userName = request.getParameter("txtName");
+        if(ck != null)
+        {
         for(int i=0; i<=ck.length; i++)
         {
             if((ck[i].getName()).equals(userName))
@@ -34,7 +36,7 @@ public class UserVisitCookie extends HttpServlet {
                 count = Integer.parseInt(ck[i].getValue());
             }
         }
-        
+        }
         
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
