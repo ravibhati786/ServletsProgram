@@ -12,10 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author lacs.lab
- */
 @WebServlet(urlPatterns = {"/ServerInfoToClient"})
 public class ServerInfoToClient extends HttpServlet {
 

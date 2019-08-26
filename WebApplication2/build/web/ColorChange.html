@@ -4,19 +4,23 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!--
+write a java program using servlet which accept color name from user and change the background color of page
+-->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Color Change</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form method="get" action="FirstServlet.java">
-            <pre>
-                Enter Name : <input type="text" name="txtName"/>
-                Enter Age  : <input type="text" name="txtAge"/>
-                             <input type="submit" value="Submit"/>
-            </pre>
+        <form action="./ColourServlet">
+        <pre>
+            Enter Color Name : <input type="text" name="txtColor"/>
+            <br>
+            <input type="submit" value="Submit"/>
+        </pre>
         </form>
     </body>
 </html>
